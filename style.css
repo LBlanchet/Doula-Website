@@ -1,227 +1,33 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2868
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
-
-\f0\fs24 \cf0 /* Postpartum by Design - Custom Brand Styling */\
-:root \{\
-    --sage: #6E8270;       /* Restorative, clinical sage green */\
-    --blush: #E8D7CD;      /* Warm, comforting clay blush */\
-    --charcoal: #2C3531;   /* Deep premium charcoal for readable text */\
-    --cream: #FAF7F2;      /* Soft, organic background instead of harsh white */\
-    --white: #FFFFFF;\
-\}\
-\
-* \{ \
-    box-sizing: border-box; \
-    margin: 0; \
-    padding: 0; \
-    font-family: 'Helvetica Neue', Arial, sans-serif; \
-\}\
-\
-body \{ \
-    background-color: var(--cream); \
-    color: var(--charcoal); \
-    line-height: 1.7; \
-\}\
-\
-/* Header & Navigation */\
-header \{ \
-    background: var(--white); \
-    padding: 25px 40px; \
-    display: flex; \
-    justify-content: space-between; \
-    align-items: center; \
-    box-shadow: 0 2px 10px rgba(0,0,0,0.03); \
-    position: sticky; \
-    top: 0; \
-    z-index: 100; \
-\}\
-\
-.logo \{ \
-    font-size: 26px; \
-    font-weight: 700; \
-    color: var(--sage); \
-    letter-spacing: 1.5px; \
-    text-transform: uppercase;\
-\}\
-\
-nav a \{ \
-    margin-left: 25px; \
-    text-decoration: none; \
-    color: var(--charcoal); \
-    font-weight: 500; \
-    font-size: 15px;\
-    letter-spacing: 0.5px;\
-    transition: color 0.3s;\
-\}\
-\
-nav a:hover \{ \
-    color: var(--sage); \
-\}\
-\
-/* Hero Welcoming Section */\
-.hero \{ \
-    padding: 140px 20px; \
-    text-align: center; \
-    background: linear-gradient(135deg, var(--white) 0%, var(--blush) 100%); \
-\}\
-\
-.hero h1 \{ \
-    font-size: 52px; \
-    margin-bottom: 24px; \
-    color: var(--charcoal); \
-    font-weight: 600;\
-    letter-spacing: -0.5px;\
-\}\
-\
-.hero p \{ \
-    font-size: 21px; \
-    margin-bottom: 40px; \
-    max-width: 650px; \
-    margin-left: auto; \
-    margin-right: auto; \
-    color: #4A5551;\
-\}\
-\
-/* Buttons */\
-.btn \{ \
-    background-color: var(--sage); \
-    color: var(--white); \
-    padding: 16px 36px; \
-    text-decoration: none; \
-    border-radius: 30px; \
-    font-weight: 600; \
-    letter-spacing: 0.5px;\
-    display: inline-block; \
-    transition: transform 0.2s, background 0.3s; \
-    box-shadow: 0 4px 10px rgba(110, 130, 112, 0.2);\
-\}\
-\
-.btn:hover \{ \
-    background-color: #556657; \
-    transform: translateY(-2px);\
-\}\
-\
-/* Services Layout */\
-.section \{ \
-    padding: 100px 20px; \
-    max-width: 1100px; \
-    margin: 0 auto; \
-\}\
-\
-.section h2 \{ \
-    font-size: 36px; \
-    text-align: center; \
-    margin-bottom: 50px; \
-    color: var(--sage); \
-    position: relative;\
-\}\
-\
-.services-grid \{ \
-    display: grid; \
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); \
-    gap: 40px; \
-\}\
-\
-.service-card \{ \
-    background: var(--white); \
-    padding: 40px 30px; \
-    border-radius: 16px; \
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02); \
-    border-top: 5px solid var(--sage); \
-    transition: transform 0.3s;\
-\}\
-\
-.service-card:hover \{\
-    transform: translateY(-5px);\
-\}\
-\
-.service-card h3 \{ \
-    margin-bottom: 15px; \
-    font-size: 24px; \
-    color: var(--charcoal);\
-\}\
-\
-/* About Section Alternative Background */\
-.about-bg \{\
-    background-color: #F2EAE4; \
-    width: 100%;\
-\}\
-\
-.about-content \{ \
-    display: flex; \
-    align-items: center; \
-    gap: 60px; \
-    flex-wrap: wrap; \
-\}\
-\
-.about-text \{ \
-    flex: 1; \
-    min-width: 300px; \
-\}\
-\
-/* Intake / Contact Form */\
-.contact-form \{ \
-    max-width: 650px; \
-    margin: 0 auto; \
-    background: var(--white); \
-    padding: 50px 40px; \
-    border-radius: 16px; \
-    box-shadow: 0 10px 30px rgba(0,0,0,0.02); \
-\}\
-\
-.form-group \{ \
-    margin-bottom: 25px; \
-\}\
-\
-.form-group label \{ \
-    display: block; \
-    margin-bottom: 10px; \
-    font-weight: 600; \
-    font-size: 14px;\
-    text-transform: uppercase;\
-    letter-spacing: 0.5px;\
-    color: var(--sage);\
-\}\
-\
-.form-group input, .form-group textarea \{ \
-    width: 100%; \
-    padding: 14px; \
-    border: 1px solid #E2E8F0; \
-    border-radius: 8px; \
-    font-size: 16px; \
-    background-color: #F8FAFC;\
-    transition: border 0.3s;\
-\}\
-\
-.form-group input:focus, .form-group textarea:focus \{\
-    outline: none;\
-    border-color: var(--sage);\
-    background-color: var(--white);\
-\}\
-\
-/* Footer styling */\
-footer \{ \
-    background: var(--charcoal); \
-    color: var(--white); \
-    text-align: center; \
-    padding: 50px 20px; \
-\}\
-\
-footer p \{\
-    font-size: 15px;\
-    opacity: 0.8;\
-\}\
-\
-/* Mobile Screens Optimization */\
-@media (max-width: 768px) \{ \
-    header \{ flex-direction: column; gap: 15px; padding: 20px; \}\
-    nav a \{ margin: 0 10px; \}\
-    .hero h1 \{ font-size: 36px; \} \
-    .hero p \{ font-size: 18px; \} \
-    .section \{ padding: 60px 20px; \}\
-\}\
+:root {
+    --sage: #6E8270;
+    --blush: #E8D7CD;
+    --charcoal: #2C3531;
+    --cream: #FAF7F2;
+    --white: #FFFFFF;
 }
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Helvetica Neue', Arial, sans-serif; }
+body { background-color: var(--cream); color: var(--charcoal); line-height: 1.7; }
+header { background: var(--white); padding: 25px 40px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.03); position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 26px; font-weight: 700; color: var(--sage); letter-spacing: 1.5px; text-transform: uppercase; }
+nav a { margin-left: 25px; text-decoration: none; color: var(--charcoal); font-weight: 500; font-size: 15px; transition: color 0.3s; }
+nav a:hover { color: var(--sage); }
+.hero { padding: 140px 20px; text-align: center; background: linear-gradient(135deg, var(--white) 0%, var(--blush) 100%); }
+.hero h1 { font-size: 52px; margin-bottom: 24px; color: var(--charcoal); }
+.hero p { font-size: 21px; margin-bottom: 40px; max-width: 650px; margin-left: auto; margin-right: auto; color: #4A5551; }
+.btn { background-color: var(--sage); color: var(--white); padding: 16px 36px; text-decoration: none; border-radius: 30px; font-weight: 600; display: inline-block; transition: transform 0.2s, background 0.3s; box-shadow: 0 4px 10px rgba(110, 130, 112, 0.2); }
+.btn:hover { background-color: #556657; transform: translateY(-2px); }
+.section { padding: 100px 20px; max-width: 1100px; margin: 0 auto; }
+.section h2 { font-size: 36px; text-align: center; margin-bottom: 50px; color: var(--sage); }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; }
+.service-card { background: var(--white); padding: 40px 30px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); border-top: 5px solid var(--sage); transition: transform 0.3s; }
+.service-card:hover { transform: translateY(-5px); }
+.service-card h3 { margin-bottom: 15px; font-size: 24px; }
+.about-bg { background-color: #F2EAE4; max-width: 100%; width: 100%; }
+.about-content { display: flex; align-items: center; gap: 60px; flex-wrap: wrap; max-width: 1100px; margin: 0 auto; }
+.about-text { flex: 1; min-width: 300px; }
+.contact-form { max-width: 650px; margin: 0 auto; background: var(--white); padding: 50px 40px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.02); }
+.form-group { margin-bottom: 25px; }
+.form-group label { display: block; margin-bottom: 10px; font-weight: 600; font-size: 14px; text-transform: uppercase; color: var(--sage); }
+.form-group input, .form-group textarea { width: 100%; padding: 14px; border: 1px solid #E2E8F0; border-radius: 8px; font-size: 16px; background-color: #F8FAFC; }
+footer { background: var(--charcoal); color: var(--white); text-align: center; padding: 50px 20px; }
+@media (max-width: 768px) { header { flex-direction: column; gap: 15px; padding: 20px; } nav a { margin: 0 10px; } .hero h1 { font-size: 36px; } .hero p { font-size: 18px; } }
